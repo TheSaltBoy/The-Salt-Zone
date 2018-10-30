@@ -7,7 +7,7 @@
 }
 
 .cv {
-	border: 1px solid white;
+	padding: 50px;
 }
 
 .download {
@@ -32,4 +32,21 @@ a {
 .button {
 	width: auto;
 	padding: 20px;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+h3 {
+	padding-left: 20px;
+}
+
+p {
+	font-size: 1em;
+	padding-left: 40px;
+}
+
+span {
+	color: #db4b7b;
 }
