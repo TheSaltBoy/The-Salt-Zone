@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="utf-8"/>
+    <title>Welcome to the Salt Zone</title>
+    <link href="css/home.css" rel="stylesheet" type="text/css"/>
+	<link href="https://fonts.googleapis.com/css?family=Kanit:800|Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="icon" href="css/images/r1.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+	
+	<script>
+		
+	var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("nav").style.top = "0";
+  } else {
+    document.getElementById("nav").style.top = "-1000px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+
+	function randomPic() {
+	  var myPix =  [
+		"css/images/r1.png",
+		"css/images/r2.png",
+		"css/images/r3.png",
+		"css/images/r4.png",
+		"css/images/r5.png",
+		"css/images/r6.png",
+	  ];
+	  var randomNum = Math.floor(Math.random() * myPix.length);
+	  document.getElementById("rando").src = myPix[randomNum];
+}
+
+		
+	</script>
+	
+	<div class="nav" id="nav">
+			<a href="cv.html">CV</a>
+			<a href="work.html">Work</a>
+			<a href="about.html">About</a>
+			<a href="index.html">Home</a>
+	</div>
+	
+	<body>
+		<section class="intro" id="fade">
+			<div class="gridtop a">
+				<div class="center one flex pad">
+					<h1>Hi! I'm <a href="http://www.instagram.com/thesaltboy">@thesaltboy</a> but IRL I go by Glen.</h1>
+					<p>You're probably wondering why I brought you here today. Let me show you!</p>
+					<a class="button" href="work.html">Just bring me straight to the good stuff</a>
+				</div>
+				<div class="center two">
+					<img class="intro-me hvr-grow-rotate" id="rando" onclick="randomPic()" src="css/images/r1.png">
+				</div>
+			</div>
+		</section>
+
+		<section class="space">
+			<div class="bg-text">
+				<p>I've travelled</p>
+				<h1 class="top">FAR</h1>
+				<img class="astronaut vert-move" src="css/images/astronaut.png">
+				<h1 class="bottom">& WIDE</h1>
+				<p>to help tell your story</p>
+			</div>
+		</section>
+
+		<section class="whatido">
+			<div class="container">
+				<div class="header">
+					<h2>What do I do?</h2>
+				</div>
+				<div class="gridtop center">
+					<div class="center pad one">
+						<a href="work.html"><img class="small hvr-grow-rotate" src="css/images/giraffe.png"></a>
+						<p>I'm an illustrator so I, you know, illustrate things... I'll just let the pictures do the talking.</p>
+					</div>
+					<div class="center pad two">
+						<a href="work.html"><img class="small hvr-grow-rotate" src="css/images/r1.png"></a>
+						<p>I've also got a passion for branding! Helping people express themselves gives me the warm fuzzies.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
+	
+	<footer>
+		<div class="foot">
+			<p>© 2018 Glen Nelson</p>
+			<div class="social">
+				<a class="fa fa-instagram" href="http://www.instagram.com/thesaltboy"></a>
+				<a class="fa fa-tumblr" href="http://www.thesaltboy.tumblr.com"></a>
+				<a class="fa fa-dribbble" href="http://www.dribbble.com/thesaltboy"></a>
+			</div>
+		</div>
+	
+	</footer>
+	
+</html>
