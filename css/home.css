@@ -16,6 +16,10 @@ h1 {
 	font-size: 6.854em;
 }
 
+h2 {
+	font-size: 4.236em;
+}
+
 p {
 	font-family: Open Sans;
 	font-size: 2.618em;
@@ -55,7 +59,7 @@ body {
 }
 
 .nav a:first-child {
-	margin-right: 5%;
+	margin-right: 3%;
 }
 
 /*---------------INTRO---------------*/
@@ -73,7 +77,6 @@ h1 a {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	grid-gap: 1%;
-	margin: 3%;
 }
 
 .a {
@@ -97,6 +100,10 @@ h1 a {
 
 .intro-me:focus {
 
+}
+
+.b {
+	margin-left: 3%;
 }
 
 
@@ -163,42 +170,36 @@ img.vert-move {
 
 .header {
 	text-align: center;
-	font-size: 4.236em;
 	margin-top: 5%;
+	margin-bottom: 5%;
 }
 
-.container {
+.gridtop.center p {
+	padding-left: 7%;
+	padding-right: 7%;
 }
 
 /*---------------FOOTER---------------*/
 
 footer {
-	height: 5vh;
+	height: 6vh;
 	width: 100vw;
 	background-color: #243036;
 	color: white;
-}
-
-.foot {
 	margin-bottom: 1%;
-}
-
-footer p {
-	font-size: 1em;
-}
-
-.social {
-	float: right;
+	text-align: center;
+	overflow: hidden;
 }
 
 .fa {
 	padding: 20px;
 	font-size: 30px;
-	height: 30px;
-	width: 30px;
+	height: auto;
+	width: auto;
 	text-align: center;
 	text-decoration: none;
 	border-radius: 50%;
+	margin-bottom: 1%;
 }
 
 .fa-instagram{

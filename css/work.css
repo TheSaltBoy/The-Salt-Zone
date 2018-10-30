@@ -1,0 +1,93 @@
+* {
+	text-decoration: none;
+	color: white;
+}
+
+.grid {
+	margin-top: 10vh;
+	padding: 20px;
+	height: 86vh;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	grid-gap: 20px;
+}
+
+.card {
+	background-color: blue;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.overlay {
+	height: 100%;
+	width: 100%;
+	transition: 0.4s ease;
+	opacity: 0;
+	filter: blur(0.5);
+	background-color: #db4b7b;
+	
+	display: flex;
+	align-items: flex-end;
+}
+
+.overlay h2 {
+	font-size: 3em;
+	padding-left: 20px;
+	padding-bottom: 10px;
+}
+
+.card:hover .overlay {
+	opacity: 1;
+}
+
+.icon {
+	filter: invert(1);
+}
+
+.icons {
+	display: flex;
+	flex-direction: row;
+	padding-bottom: 10px;
+}
+
+.icons img {
+	height: 40px;
+}
+
+.under {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 0.3em;
+	padding-left: 20px;
+}
+
+.one {
+	grid-column: 1/4;
+	background-image: url(images/banners/brand.png);
+}
+
+.two {
+	background-image: url(images/banners/awkwords.png);
+}
+
+.three {
+	grid-row: 2/5;
+	background-image: url(images/banners/icons.png);
+}
+
+.five {
+	grid-column: 2/5;
+	background-image: url(images/banners/infographic.png);
+}
+
+.six {
+	grid-column: 2/5;
+	background-image:url(images/banners/illustrations.png);
+}
+
+
+/*---------------MEDIA QUERIES---------------*/
