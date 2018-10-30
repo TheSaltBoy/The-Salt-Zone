@@ -1,0 +1,36 @@
+* {
+	color: white;
+}
+
+.two {
+	margin-right: 100px;
+}
+
+.two p, a {
+	font-size: 1.6em;
+}
+
+.gridtop {
+}
+
+a {
+	font-size: 3em;
+	color: #4fcd36;
+	transition: transform .25s ease;
+}
+
+a:hover {
+	transform: scale(1.1);
+}
+
+.social {
+	width: 300px;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.button {
+	padding: 20px;
+}

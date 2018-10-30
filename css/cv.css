@@ -1,0 +1,35 @@
+.grid {
+	padding: 20px;
+	height: 86vh;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 20px;
+}
+
+.cv {
+	border: 1px solid white;
+}
+
+.download {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.download * {
+	padding: 50px;
+}
+
+a {
+	font-size: 3em;
+	color: #4fcd36;
+}
+
+.button {
+	width: auto;
+	padding: 20px;
+}

@@ -5,6 +5,7 @@
     <meta charset="utf-8"/>
     <title>Welcome to the Salt Zone</title>
     <link href="css/home.css" rel="stylesheet" type="text/css"/>
+    <link href="css/about.css" rel="stylesheet" type="text/css"/>
 	<link href="https://fonts.googleapis.com/css?family=Kanit:800|Roboto" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link rel="icon" href="css/images/r1.png">
@@ -12,23 +13,49 @@
 </head>
 	
 	<script>
-		
-	var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("nav").style.top = "0";
-  } else {
-    document.getElementById("nav").style.top = "-1000px";
-  }
-  prevScrollpos = currentScrollPos;
+	
+	function randomPic() {
+	  var myPix =  [
+		"css/images/r1.png"
+	  ];
+	  var randomNum = Math.floor(Math.random() * myPix.length);
+	  document.getElementById("rando").src = myPix[randomNum];
 }
-
+	
 	</script>
 	
-	<div class="nav" id="nav">
-			<a href="cv.html">CV</a>
-			<a href="work.html">Work</a>
-			<a href="about.html">About</a>
+	<div class="nav">
+		<div class="nav bar">
 			<a href="index.html">Home</a>
+			<a href="about.html">About</a>
+			<a href="work.html">Work</a>
+			<a href="cv.html">CV</a>
+		</div>
 	</div>
+	
+	<div class="gridtop a b">
+		
+		<div class="center one">
+					<img class="intro-me hvr-grow-rotate" id="rando" onclick="randomPic()" src="css/images/r1.png">
+				</div>
+		
+				<div class="center two flex pad">
+					
+					<h1>The man himself</h1>
+					
+					<p>I'm just your friendly neighbourhood designer and Dungeon Master. I'm originally from Dallas TX, now living in Ireland.</p>
+					
+					<p>I'm an illustrator and designer when I'm not too busy playing video games. You've probably trashed me in Rocket League...</p>
+					
+					<p>If you wanna get in touch for some work or an autograph, you can reach me here!</p>
+					<a href="mailto:glenbnelsoniii@gmail.com?Subject=Hi!">glenbnelsoniii@gmail.com</a>
+					
+					<div class="social">
+					<a target="_blank" class="fa fa-instagram" href="http://www.instagram.com/thesaltboy"></a>
+				<a target="_blank"  class="fa fa-tumblr" href="http://www.thesaltboy.tumblr.com"></a>
+				<a target="_blank" class="fa fa-dribbble" href="http://www.dribbble.com/thesaltboy"></a>
+					</div>
+					
+				</div>
+		
+			</div>

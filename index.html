@@ -12,17 +12,6 @@
 </head>
 	
 	<script>
-		
-	var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("nav").style.top = "0";
-  } else {
-    document.getElementById("nav").style.top = "-1000px";
-  }
-  prevScrollpos = currentScrollPos;
-}
 
 	function randomPic() {
 	  var myPix =  [
@@ -36,21 +25,22 @@ window.onscroll = function() {
 	  var randomNum = Math.floor(Math.random() * myPix.length);
 	  document.getElementById("rando").src = myPix[randomNum];
 }
-
 		
 	</script>
 	
-	<div class="nav" id="nav">
-			<a href="cv.html">CV</a>
-			<a href="work.html">Work</a>
-			<a href="about.html">About</a>
+	<div class="nav">
+		<div class="nav bar">
 			<a href="index.html">Home</a>
+			<a href="about.html">About</a>
+			<a href="work.html">Work</a>
+			<a href="cv.html">CV</a>
+		</div>
 	</div>
 	
 	<body>
-		<section class="intro" id="fade">
-			<div class="gridtop a b">
-				<div class="center one flex pad">
+		<section class="intro">
+			<div class="gridtop b">
+				<div class="center pad">
 					<h1>Hi! I'm <a href="http://www.instagram.com/thesaltboy">@thesaltboy</a> but IRL I go by Glen.</h1>
 					<p>You're probably wondering why I brought you here today. Let me show you!</p>
 					<a class="button" href="work.html">Just bring me straight to the good stuff</a>
@@ -91,9 +81,11 @@ window.onscroll = function() {
 	</body>
 	
 	<footer>
-				<a class="fa fa-instagram" href="http://www.instagram.com/thesaltboy"></a>
-				<a class="fa fa-tumblr" href="http://www.thesaltboy.tumblr.com"></a>
-				<a class="fa fa-dribbble" href="http://www.dribbble.com/thesaltboy"></a>
+		<div class="social">
+				<a target="_blank" class="fa fa-instagram" href="http://www.instagram.com/thesaltboy"></a>
+				<a target="_blank" class="fa fa-tumblr" href="http://www.thesaltboy.tumblr.com"></a>
+				<a target="_blank" class="fa fa-dribbble" href="http://www.dribbble.com/thesaltboy"></a>
+		</div>
 	</footer>
 	
 </html>

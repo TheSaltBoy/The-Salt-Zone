@@ -35,31 +35,35 @@ body {
 /*---------------NAVIGATION---------------*/
 
 .nav {
-	overflow: hidden;
-	top: 0;
-	position: fixed;
 	width: 100vw;
-	z-index: 100;
 	margin-top: 1%;
+	z-index: 100;
+	display: flex;
+	justify-content: center;
+}
+
+.bar {
+	width: 500px;
+	display: flex;
+	padding: 10px;
+	justify-content: space-between;
 }
 
 .nav a {
 	text-decoration: none;
 	color: white;
-	float: right;
 	text-align: center;
-    padding: 14px 36px;
 	font-size: 1.5em;
 	font-family: Roboto;
 	transition: transform .25s ease;
 }
 
-.nav a:hover {
-	transform: scale(1.1);
+a {
+	transition: transform .25s ease;
 }
 
-.nav a:first-child {
-	margin-right: 3%;
+a:hover {
+	transform: scale(1.2);
 }
 
 /*---------------INTRO---------------*/
@@ -77,33 +81,18 @@ h1 a {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	grid-gap: 1%;
-}
-
-.a {
-	margin-top: 8%;
+	
+	margin-top: 3%;
+	margin-left: 2%;
+	margin-right: 2%;
 }
 
 .pad * {
 	padding: 20px;
 }
 
-.flex {
-	display: flex; 
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: center;
-}
-
 .intro-me {
 	width: 30vw;
-	}
-
-.intro-me:focus {
-
-}
-
-.b {
-	margin-left: 3%;
 }
 
 
@@ -182,7 +171,7 @@ img.vert-move {
 /*---------------FOOTER---------------*/
 
 footer {
-	height: 6vh;
+	height: 8vh;
 	width: 100vw;
 	background-color: #243036;
 	color: white;
@@ -217,6 +206,16 @@ footer {
   	color: white;
 }
 
+.social {
+	margin-bottom: 10px;
+	padding: 10px;
+	width: 300px;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
 /*---------------MISC---------------*/
 
 .center {
@@ -231,9 +230,8 @@ footer {
 	background-color: #db4b7b;
 	color: white;
 	font-size: 1.618em;
-	border-radius: 50px 50px 50px 50px;
+	border-radius: 50px;
 	width: 19em;
-	margin: auto;
 }
 
 .small {
