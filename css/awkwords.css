@@ -7,11 +7,13 @@ html {
 }
 
 body {
-	background-color: #02c39a;
 }
 
 .body {
-	margin: 20px;
+	margin-left: 100px;
+	margin-right: 100px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 	padding: 0px;
 }
 
@@ -43,13 +45,8 @@ body {
 
 h1, h2 {
 	font-family: Permanent Marker;
-	text-shadow: 4px 4px #46746b;
+	text-shadow: 4px 4px black;
 }
-
-p, li, h3, a {
-	text-shadow: 1px 1px #46746b;
-}
-
 .text {
 	padding: 40px;
 	margin: 0;
@@ -99,8 +96,11 @@ h3 {
 }
 
 .full-image {
-	padding: 0;
-	margin: 0;
+	min-width: 200px;
+	max-width: 500px;
+	
+	grid-column: 1/2;
+	grid-row: 1/2;
 }
 
 .one {
