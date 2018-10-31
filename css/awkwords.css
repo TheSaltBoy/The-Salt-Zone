@@ -7,6 +7,7 @@ html {
 }
 
 body {
+	background-color: #02c39a;
 }
 
 .body {
@@ -37,12 +38,16 @@ body {
 	min-height: 50px;
 	margin-top: 20px;
 	margin-bottom: 20px;
+	background-color: #f4f197;
 }
 
 h1, h2 {
+	font-family: Permanent Marker;
+	text-shadow: 4px 4px #46746b;
 }
 
 p, li, h3, a {
+	text-shadow: 1px 1px #46746b;
 }
 
 .text {
