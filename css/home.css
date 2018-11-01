@@ -93,6 +93,13 @@ h1 a {
 	width: 30vw;
 }
 
+.hov {
+	transition: 0.2s ease-out;
+}
+
+.hov:hover {
+	transform: scale(1.1) rotate(8deg);
+}
 
 /*---------------SPACE---------------*/
 
