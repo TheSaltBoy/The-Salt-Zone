@@ -30,6 +30,7 @@ a:hover {
 	opacity: 0;
 	filter: blur(0.5);
 	background-color: #db4b7b;
+	border-radius: 25px;
 	
 	display: flex;
 	align-items: flex-end;
